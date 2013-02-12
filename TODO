@@ -1,0 +1,18 @@
+$Id: TODO 634 2013-02-06 16:48:03Z phf $
+
+- our vectors.h abstraction uses malloc/free, but it seems we could
+  do better using mmap() and friends, see this article for example:
+  http://developers.sun.com/solaris/articles/virtual_memory_arrays.html
+  I don't want to spend time implementing that now, but keeping it
+  in mind may be good... :-)
+
+- made the mistake of adding the cute clp2() stuff to strings instead
+  of vectors where it should go eventually; actually, why? seems that
+  it's only needed for strings where we can start with any number of
+  characters... unless we want all vectors to always have clp2() cap?
+
+- instead of hardcoding SPIM stuff, we should do some fake OO to allow
+  for multiple backends at runtime (maybe similar to the Python design)
+
+- I should really write proper unit tests, either using asserts or some
+  simple unit testing framework for C
