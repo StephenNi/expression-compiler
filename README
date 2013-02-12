@@ -1,10 +1,4 @@
-$Id: README 638 2013-02-11 00:12:58Z phf $
-
 Basic Interpreter/Compiler for Arithmetic Expressions
-The C Edition
-
-Copyright (c) 2007-2013 by Peter H. Froehlich <phf@acm.org>.
-All rights reserved.
 
 Obligatory list of features (aka blurb):
 
@@ -17,16 +11,3 @@ Obligatory list of features (aka blurb):
 
 - can compile expressions to stack-based MIPS assembly
   code suitable for SPIM
-
-Nothing more to say I guess? I use this code as part of a
-tutorial on compilers for freshmen and sophomores. It's
-also destined for chapter zero of my book on compilers,
-if it ever sees the light of day that is... :-)
-
-Enjoy,
-Peter
-
-PS: This C edition has fewer features than the original
-Python code. Sorry. In fact, I am not even sure *why* I
-re-wrote things in C in the first place? In any case, I
-hope you enjoy reading through the mess that it is. :-)
